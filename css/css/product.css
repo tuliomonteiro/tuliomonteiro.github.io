@@ -1,0 +1,160 @@
+.container {
+  max-width: 960px;
+}
+
+
+.site-header {
+  background-color: rgba(0, 0, 0, .85);
+  -webkit-backdrop-filter: saturate(180%) blur(20px);
+  backdrop-filter: saturate(180%) blur(20px);
+}
+.site-header a {
+  color: #999;
+  transition: ease-in-out color .15s;
+}
+.site-header a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+
+/*
+ * Dummy devices (replace them with your own or something else entirely!)
+ */
+
+.product-device {
+  position: absolute;
+  right: 10%;
+  bottom: -30%;
+  width: 300px;
+  height: 540px;
+  background-color: #333;
+  border-radius: 21px;
+  -webkit-transform: rotate(30deg);
+  transform: rotate(30deg);
+}
+
+.product-device::before {
+  position: absolute;
+  top: 10%;
+  right: 10px;
+  bottom: 10%;
+  left: 10px;
+  content: "";
+  background-color: rgba(255, 255, 255, .1);
+  border-radius: 5px;
+}
+
+.product-device-2 {
+  top: -25%;
+  right: auto;
+  bottom: 0;
+  left: 5%;
+  background-color: #e5e5e5;
+}
+
+.wrapper-content> .row > div {
+  background-color: #F5F5F5;
+  height: 500px;
+}
+
+.wrapper-content > .row > .main-div div > i {
+  font-size: 80px;
+}
+.wrapper-content > .row > .main-div > button {
+  float: right;
+}
+
+.content-1{
+  margin-top: 30px;
+}
+
+ .content-1 > i {
+  float: left;
+  margin-right: 20px;
+}
+.content-2 > i {
+  float: right;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+.content-3 > i {
+  float: left;
+  margin-right: 20px;
+}
+.content-3{
+  margin-top: 40px;
+}
+
+footer{
+  background-color: #e9ecef;
+  /* margin-left: 30px;
+  margin-right: 30px; */
+}
+
+footer > .flex-container{
+  margin-right: 20px;
+  margin-left: 20px;
+}
+
+footer > .flex-container div {
+  margin-top: 20px;
+}
+
+/* footer > .row > div {
+  height: 100%;
+} */
+
+footer > .flex-container > div > i{
+  font-size: 80px;
+  float: left;
+
+}
+
+footer > .flex-container > div > p {
+  font-size: 12px;
+  float: right;
+  margin-top: 29px;
+  margin-left: 10px;
+}
+
+footer >.flex-container{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+}
+
+.flex-item{
+  flex-basis: auto;
+}
+
+
+
+
+
+
+/*
+ * Extra utilities
+ */
+
+.border-top { border-top: 1px solid #e5e5e5; }
+.border-bottom { border-bottom: 1px solid #e5e5e5; }
+
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+
+.flex-equal > * {
+  -ms-flex: 1;
+  -webkit-box-flex: 1;
+  flex: 1;
+}
+@media (min-width: 768px) {
+  .flex-md-equal > * {
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+  }
+}
+
+.overflow-hidden { overflow: hidden; }
